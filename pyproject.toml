@@ -11,11 +11,14 @@ exclude = "((.eggs | .git | .pytype | .pytest_cache | build | dist))"
 name = "questionary"
 version = "2.0.1"
 description = "Python library to build pretty command line user prompts ⭐️"
-authors = [ "Tom Bocklisch <tombocklisch@gmail.com>",]
-maintainers = [ "Tom Bocklisch <tombocklisch@gmail.com>", "Kian Cross <kian@kiancross.co.uk>"]
+authors = ["Tom Bocklisch <tombocklisch@gmail.com>"]
+maintainers = [
+    "Tom Bocklisch <tombocklisch@gmail.com>",
+    "Kian Cross <kian@kiancross.co.uk>",
+]
 repository = "https://github.com/tmbo/questionary"
 documentation = "https://questionary.readthedocs.io/"
-classifiers=[
+classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -27,13 +30,13 @@ classifiers=[
     "Programming Language :: Python :: 3.11",
     "Topic :: Software Development :: Libraries",
 ]
-keywords = [ "cli", "ui", "inquirer", "questions", "prompt",]
+keywords = ["cli", "ui", "inquirer", "questions", "prompt"]
 readme = "README.md"
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.8"
-prompt_toolkit = ">=2.0,<=3.0.36"  # once https://github.com/prompt-toolkit/python-prompt-toolkit/issues/1726 is fixed, this can be changed to ">=2.0,<4.0"
+prompt_toolkit = ">=2.0,<4.0"
 
 [tool.poetry.group.docs]
 optional = true
@@ -51,4 +54,4 @@ pytest = "^7.0.1"
 coveralls = "^3.3.1"
 mypy = "^1.2.0"
 toml = "^0.10.2"
-pre-commit = { version = ">=2.20,<4.0", python = ">=3.7,<4.0"}
+pre-commit = { version = ">=2.20,<4.0", python = ">=3.7,<4.0" }
